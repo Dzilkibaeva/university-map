@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0596bcc1d885b438cb198a86aab0db48 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0596bcc1d885b438cb198a86aab0db48" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0596bcc1d885b438cb198a86aab0db48 = L.map(
+                "map_0596bcc1d885b438cb198a86aab0db48",
+                {
+                    center: [51.18692, 71.409717],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f97da753d44bdf7ebda25c3c853afcb7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f97da753d44bdf7ebda25c3c853afcb7.addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+            var marker_b9de481626652eb265d634b8d537d664 = L.marker(
+                [51.187944, 71.409579],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_cd473735379a14881ab30eef235055a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d80b9a00bae21df78e4d2e20766b3d9 = $(`<div id="html_9d80b9a00bae21df78e4d2e20766b3d9" style="width: 100.0%; height: 100.0%;"><strong>Биотехнический корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_cd473735379a14881ab30eef235055a1.setContent(html_9d80b9a00bae21df78e4d2e20766b3d9);
+            
+        
+
+        marker_b9de481626652eb265d634b8d537d664.bindPopup(popup_cd473735379a14881ab30eef235055a1)
+        ;
+
+        
+    
+    
+            marker_b9de481626652eb265d634b8d537d664.bindTooltip(
+                `<div>
+                     Местоположение: Биотехнический корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cb383deefcf46ff9e3aac957378d275 = L.marker(
+                [51.18692, 71.409717],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_ec7cbb2793d927dad1dd9ed0266e3131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a47e3fb98f28d9bf6ed932a1952ba39c = $(`<div id="html_a47e3fb98f28d9bf6ed932a1952ba39c" style="width: 100.0%; height: 100.0%;"><strong>Главный корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_ec7cbb2793d927dad1dd9ed0266e3131.setContent(html_a47e3fb98f28d9bf6ed932a1952ba39c);
+            
+        
+
+        marker_9cb383deefcf46ff9e3aac957378d275.bindPopup(popup_ec7cbb2793d927dad1dd9ed0266e3131)
+        ;
+
+        
+    
+    
+            marker_9cb383deefcf46ff9e3aac957378d275.bindTooltip(
+                `<div>
+                     Местоположение: Главный корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9ab7504c89668748b570845d3e87b00 = L.marker(
+                [51.187306, 71.410942],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_5e47a2e905cc1fd6cfc5e7181a8b2e67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76a7c0d2a493352ccd8d4cbf11378433 = $(`<div id="html_76a7c0d2a493352ccd8d4cbf11378433" style="width: 100.0%; height: 100.0%;"><strong>Военный корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_5e47a2e905cc1fd6cfc5e7181a8b2e67.setContent(html_76a7c0d2a493352ccd8d4cbf11378433);
+            
+        
+
+        marker_a9ab7504c89668748b570845d3e87b00.bindPopup(popup_5e47a2e905cc1fd6cfc5e7181a8b2e67)
+        ;
+
+        
+    
+    
+            marker_a9ab7504c89668748b570845d3e87b00.bindTooltip(
+                `<div>
+                     Местоположение: Военный корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bedd67ab6cc32c4b856d0a3bc645625 = L.marker(
+                [51.187086, 71.411717],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_ed8e86c8f6fba8ec73bbe5d344273e3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eada6bfa33a4dea19bec949dc56d478f = $(`<div id="html_eada6bfa33a4dea19bec949dc56d478f" style="width: 100.0%; height: 100.0%;"><strong>Технический (новый) корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_ed8e86c8f6fba8ec73bbe5d344273e3e.setContent(html_eada6bfa33a4dea19bec949dc56d478f);
+            
+        
+
+        marker_2bedd67ab6cc32c4b856d0a3bc645625.bindPopup(popup_ed8e86c8f6fba8ec73bbe5d344273e3e)
+        ;
+
+        
+    
+    
+            marker_2bedd67ab6cc32c4b856d0a3bc645625.bindTooltip(
+                `<div>
+                     Местоположение: Технический (новый) корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e68972ba7450c8bd7e357715687d58f4 = L.marker(
+                [51.187625, 71.411373],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_7370099ec7f1a82653334a4c926b357e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_460ee543212c16dc623abb491886680c = $(`<div id="html_460ee543212c16dc623abb491886680c" style="width: 100.0%; height: 100.0%;"><strong>Технический (старый) корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_7370099ec7f1a82653334a4c926b357e.setContent(html_460ee543212c16dc623abb491886680c);
+            
+        
+
+        marker_e68972ba7450c8bd7e357715687d58f4.bindPopup(popup_7370099ec7f1a82653334a4c926b357e)
+        ;
+
+        
+    
+    
+            marker_e68972ba7450c8bd7e357715687d58f4.bindTooltip(
+                `<div>
+                     Местоположение: Технический (старый) корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12104d3e1314acfd1aadc424a4179974 = L.marker(
+                [51.185989, 71.410354],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_06572bc909aefa93addb126d7a542f21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cea5b6518c26febcdd78bfc12ee2475 = $(`<div id="html_4cea5b6518c26febcdd78bfc12ee2475" style="width: 100.0%; height: 100.0%;"><strong>Агрономический корпус</strong><br>Категория: корпус</div>`)[0];
+                popup_06572bc909aefa93addb126d7a542f21.setContent(html_4cea5b6518c26febcdd78bfc12ee2475);
+            
+        
+
+        marker_12104d3e1314acfd1aadc424a4179974.bindPopup(popup_06572bc909aefa93addb126d7a542f21)
+        ;
+
+        
+    
+    
+            marker_12104d3e1314acfd1aadc424a4179974.bindTooltip(
+                `<div>
+                     Местоположение: Агрономический корпус
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_673f6112ce3e5c4f765472d47f27b2ea = L.marker(
+                [51.186364, 71.41328],
+                {}
+            ).addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+        var popup_2b34692c3f3333c3b9226fe8f00b1960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc48f449e0a1489fb56b40699317bf0 = $(`<div id="html_acc48f449e0a1489fb56b40699317bf0" style="width: 100.0%; height: 100.0%;"><strong>Поликлинника</strong><br>Категория: здание</div>`)[0];
+                popup_2b34692c3f3333c3b9226fe8f00b1960.setContent(html_acc48f449e0a1489fb56b40699317bf0);
+            
+        
+
+        marker_673f6112ce3e5c4f765472d47f27b2ea.bindPopup(popup_2b34692c3f3333c3b9226fe8f00b1960)
+        ;
+
+        
+    
+    
+            marker_673f6112ce3e5c4f765472d47f27b2ea.bindTooltip(
+                `<div>
+                     Местоположение: Поликлинника
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            tile_layer_f97da753d44bdf7ebda25c3c853afcb7.addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+            tile_layer_f97da753d44bdf7ebda25c3c853afcb7.addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+    
+            tile_layer_f97da753d44bdf7ebda25c3c853afcb7.addTo(map_0596bcc1d885b438cb198a86aab0db48);
+        
+</script>
+</html>
